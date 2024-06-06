@@ -1,0 +1,182 @@
+complexities:
+    constant: O(1)
+    logarithmic: O(log n)
+    linear: O(n)
+    quadratic: O(n^2)
+    cubic: O(n^3)
+    exponential: O(2^n)
+    factorial: O(n!)
+
+search algorithms:
+    linear search (worst case): O(n)
+    linear search (best case): O(1)
+    binary search (worst case): O(log n)
+    binary search (best case): O(1)
+    ternary search (worst case): O(log3 n)
+    ternary search (best case): O(1)
+
+sorting algorithms:
+    bubble sort (worst case): O(n^2)
+    bubble sort (best case): O(n)
+    selection sort: O(n^2)
+    insertion sort (worst case): O(n^2)
+    insertion sort (best case): O(n)
+    heap sort: O(n * log n)
+    merge sort: O(n * log n)
+    quick sort: O(n * log n)
+    
+array:
+    append: O(1)
+    append (when dynamic array is full): O(n)
+    insert (start and middle): O(n)
+    pop: O(1)
+    remove (start and middle): O(n)
+    search by index: O(1)
+    search by item: O(n)
+
+singly linked list:
+    search by index: O(n)
+    search by node: O(n)
+    reverse: O(n)
+    append (with a tail pointer): O(1)
+    append (without a tail pointer): O(n)
+    insert (middle): O(n)
+    appendleft: O(1)
+    pop (with a tail pointer): O(n)
+    pop (without a tail pointer): O(n)
+    remove (middle): O(n)
+    popleft: O(1)
+
+doubly linked list:
+    search by index: O(n)
+    search by node: O(n)
+    reverse: O(n)
+    append (with a tail pointer): O(1)
+    append (without a tail pointer): O(n)
+    insert (middle): O(n)
+    appendleft: O(1)
+    pop (with a tail pointer): O(1)
+    pop (without a tail pointer): O(n)
+    remove (middle): O(n)
+    popleft: O(1)
+    
+stack (array):
+    LIFO
+    push: O(1)
+    pop: O(1)
+    peek: O(1)
+
+queue (array):
+    FIFO
+    enqueue: O(1)
+    dequeue: O(1)
+    peek: O(1)
+    reverse: O(n)
+
+queue (stack):
+    FIFO
+    enqueue: O(1)
+    dequeue: O(n)
+    peek: O(n)
+    reverse: O(n)
+
+priority queue (array):
+    FIFO
+    enqueue: O(n)
+    dequeue: O(1)
+    peek: O(1)
+
+priority queue (heap):
+    FIFO
+    enqueue: O(log n)
+    dequeue: O(log n)
+    peek: O(1)
+
+hash table (open addressing):
+    L: length of cluster
+    worst case:
+        update: O(L)
+        remove: O(L)
+        search by key: O(L)
+    best case:
+        update: O(1)
+        remove: O(1)
+        search by key: O(1)
+
+hash table (separate chaining):
+    L: length of linked list
+    update (update a node): O(L)
+    update (append a node, with a tail pointer): O(1)
+    update (append a node, without a tail pointer): O(L)
+    remove: O(L)
+    search by key: O(L)
+
+set (average):
+    s: first set
+    t: second set
+    contains: O(1)
+    add: O(1)
+    remove, discard, pop: O(1)
+    union: O(len(s) + len(t))
+    intersection: O(min(len(s), len(t)))
+    difference : O(len(s))
+    difference update: O(len(t))
+    symmetric difference: O(len(s) + len(t))
+    symmetric difference update: O(len(t))
+
+BS tree:
+    worst case:
+        insert: O(n)
+        remove: O(n)
+        search by node: O(n)
+    best case:
+        insert: O(log n)
+        remove: O(log n)
+        search by node: O(log n)
+
+AVL tree:
+    insert: O(log n)
+    remove: O(log n)
+    search by node: O(log n)
+
+heap:
+    insert: O(log n)
+    remove: O(log n)
+    search by item: O(n)
+    search by index: O(1)
+    search for max in max heap: O(1)
+    search for min in min heap: O(1)
+
+trie:
+    L: length of word
+    insert: O(L)
+    remove: O(L)
+    search for word: O(L)
+
+graph (adjacency matrix):
+    V: vertices or nodes
+    E: edges
+    space complexity: O(V^2)
+    add node: O(V^2)
+    remove node: O(V^2)
+    add edge: O(1)
+    remove edge: O(1)
+    depth first traversal: O(V^2)
+    breadth first traversal: O(V^2)
+    has cycle: O(V^2)
+    shortest path: O(V^2 * log V)
+    minimum spanning tree: O(V^2 * log V)
+
+graph (adjacency list, average):
+    V: vertices or nodes
+    E: edges
+    space complexity: O(V + E)
+    add node: O(1)
+    remove node: O(V)
+    add edge: O(1)
+    remove edge: O(1)
+    depth first traversal: O(V + E)
+    breadth first traversal: O(V + E)
+    has cycle: O(V + E)
+    shortest path: O((V + E) * log V)
+    minimum spanning tree: O(( V + E ) * log V)
